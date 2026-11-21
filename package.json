@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "postbuild": "node scripts/build-service-worker.mjs"
+    "postbuild": "node scripts/build-service.mjs"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.15.0",
