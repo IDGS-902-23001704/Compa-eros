@@ -1,0 +1,108 @@
+﻿body {
+  margin: 0;
+  background: #f4f6f9;
+  color: #172334;
+  font: 1rem/1.5 system-ui, sans-serif;
+}
+
+.card {
+  box-sizing: border-box;
+  width: min(48rem, calc(100% - 2rem));
+  margin: 2rem auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  border: 1px solid #d9e1eb;
+  border-radius: .75rem;
+  background: #fff;
+}
+
+.card h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.rows label {
+  display: grid;
+  flex: 1 1 10rem;
+  gap: .25rem;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.card input,
+.card button {
+  box-sizing: border-box;
+  min-height: 2.5rem;
+  padding: .4rem .65rem;
+  border: 1px solid #8798ab;
+  border-radius: .375rem;
+  color: inherit;
+  background: #fff;
+  font: inherit;
+}
+
+.card input {
+  width: 100%;
+}
+
+.card button {
+  background: #f4f6f9;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #e5ecf4;
+}
+
+.rows button[type='submit'] {
+  border-color: #245da8;
+  background: #245da8;
+  color: #fff;
+}
+
+.rows button[type='submit']:hover {
+  background: #194783;
+}
+
+.card :focus-visible {
+  outline: 2px solid #245da8;
+  outline-offset: 2px;
+}
+
+.card [role='alert'] {
+  color: #9c2424;
+}
+
+.card [role='status']:not(:empty) {
+  margin-bottom: .75rem;
+  color: #24623f;
+}
+
+.companeros {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.companeros th,
+.companeros td {
+  padding: .5rem;
+  border-bottom: 1px solid #d9e1eb;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.companeros th {
+  background: #f0f4f8;
+}
+
+.companeros td button {
+  margin: .125rem 0;
+}
